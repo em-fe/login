@@ -17,6 +17,7 @@
     @include px2rem('height', 712px);
     @include paddingLeft(30px);
     @include paddingRight(30px);
+    @include paddingTop(80px);
 
     box-sizing: border-box;
     background: #fff;

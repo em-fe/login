@@ -1,11 +1,11 @@
 <template>
   <div class="login-wap" v-if="show" @click="closeFlag">
     <div class="login-wap-popup">
-      <div class="login-wap-switch">
+      <!-- <div class="login-wap-switch">
         <p class="login-wap-switch-box login-wap-switch-one">
           <span id="0" :class="[{'login-wap-switch-box-text-on': index === 0}, 'login-wap-switch-box-text']">登录</span>
         </p>
-      </div>
+      </div> -->
       <!-- <div class="login-wap-switch" @click="switchLoginWay">
         <p class="login-wap-switch-box">
           <span id="0" :class="[{'login-wap-switch-box-text-on': index === 0}, 'login-wap-switch-box-text']">短信登录</span>
@@ -41,7 +41,7 @@
           </div>
         </div>
         <button :class="['login-wap-main-button', {'login-wap-main-button-disabled' : loginOnFlg}]" @click="login">{{loginText}}</button>
-        <p class="login-wap-main-tip">首次登录自动为您创建账号</p>
+        <p class="login-wap-main-tip">绑定手机号便于您查看已购买订单</p>
       </div>
       <div class="login-wap-main login-wap-weixin" v-show="index === 1">
         <div class="login-wap-weixin-ewm"></div>

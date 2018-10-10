@@ -1,19 +1,6 @@
 <template>
   <div class="login-wap" v-if="show" @click="closeFlag">
     <div class="login-wap-popup">
-      <!-- <div class="login-wap-switch">
-        <p class="login-wap-switch-box login-wap-switch-one">
-          <span id="0" :class="[{'login-wap-switch-box-text-on': index === 0}, 'login-wap-switch-box-text']">登录</span>
-        </p>
-      </div> -->
-      <!-- <div class="login-wap-switch" @click="switchLoginWay">
-        <p class="login-wap-switch-box">
-          <span id="0" :class="[{'login-wap-switch-box-text-on': index === 0}, 'login-wap-switch-box-text']">短信登录</span>
-        </p>
-        <p class="login-wap-switch-box">
-          <span id="1" :class="[{'login-wap-switch-box-text-on': index === 1}, 'login-wap-switch-box-text']">微信登录</span>
-        </p>
-      </div> -->
       <div class="login-wap-close" @click="popupClose"></div>
       <div class="login-wap-main" v-show="index === 0">
         <div class="login-wap-main-error" v-show="errorShow">
